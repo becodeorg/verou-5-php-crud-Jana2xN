@@ -15,8 +15,7 @@
     <?php foreach ($books as $book) : ?>
         <li>
             <strong><?= $book['title'] ?></strong> by <?= $book['author'] ?>,
-            <?= $book['publication_year'] ?>, <?= $book['genre'] ?>,
-            Condition: <?= $book['condition'] ?>, Price: $<?= $book['price'] ?>
+            <?= $book['publication_year'] ?>, Genre: <?= $book['genre'] ?>
         </li>
     <?php endforeach; ?>
 </ul>
