@@ -16,8 +16,7 @@ require_once 'classes/CardRepository.php';
 $databaseManager = new DatabaseManager($config['host'], $config['user'], $config['password'], $config['dbname']);
 $databaseManager->connect();
 
-// This example is about a Pokémon card collection
-// Update the naming if you'd like to work with another collection
+// This example is about a Book collection
 $cardRepository = new CardRepository($databaseManager);
 $cards = $cardRepository->get();
 
